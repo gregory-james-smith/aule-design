@@ -10,7 +10,7 @@ The design language should follow the [M3 material design specification](https:/
 
 Use square chips from M2.
 
-| M3 | Description |
+| M3 chip | Description |
 |-|-|
 | input |  | 
 | filter | Known as "choice" chips in M2. |
@@ -27,6 +27,8 @@ There should be no icon on the left.
 
 The chip itself is not clickable.
 
+# Filtering
+
 ## Filter chips
 
 The filter chip is clickable and this toggles the chip between a selected and unselected state.
@@ -34,6 +36,27 @@ The filter chip is clickable and this toggles the chip between a selected and un
 When unselected, the chip has an outline but no fill.
 When selected, the chip has full or half tone fill, and has a tick mark on the left.
 
-### Menu filter chips
+The state of a filter chip should not affect the state of another filter chip.
 
-...
+![Filter chip](./filter-chip.png "Filter chip")
+
+## Menu filter chips
+
+A menu filter chip has a downward triangular arrow on the right to indicate it is a menu filter chip.
+
+When unselected, the chip has an outline but no fill.
+When active, the chip has full or half tone fill, with a tick mark on the left and displaying the selected option. 
+
+This solution should be used if there are more than three mutually exclusive options.
+
+![Menu filter chip](./filter-menu-chip.png "Menu filter chip")
+
+## Segmented buttons
+
+Segmented buttons should not be used.
+
+Instead a segmented filter chip should be used.
+
+The solutions should be used if there are three of less mutually exclusive options.
+
+![Segmented button](./segmented-button.png "Segmented button")
