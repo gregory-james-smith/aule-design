@@ -8,7 +8,8 @@ The design language should follow the [M3 material design specification](https:/
 
 # Chips
 
-Use square chips from M2.
+Use square chips from M3.
+Chips either have no fill and an outline or half tone fill and no outline.
 
 | M3 chip | Description |
 |-|-|
@@ -34,7 +35,7 @@ The chip itself is not clickable.
 The filter chip is clickable and this toggles the chip between a selected and unselected state.
 
 When unselected, the chip has an outline but no fill.
-When selected, the chip has full or half tone fill, and has a tick mark on the left.
+When selected, the chip has half tone fill, and has a tick mark on the left.
 
 The state of a filter chip should not affect the state of another filter chip.
 
@@ -45,7 +46,7 @@ The state of a filter chip should not affect the state of another filter chip.
 A menu filter chip has a downward triangular arrow on the right to indicate it is a menu filter chip.
 
 When unselected, the chip has an outline but no fill.
-When active, the chip has full or half tone fill, with a tick mark on the left and displaying the selected option. 
+When active, the chip has half tone fill, with a tick mark on the left and displaying the selected option. 
 
 This solution should be used if there are more than three mutually exclusive options.
 
