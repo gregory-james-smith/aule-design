@@ -24,7 +24,7 @@ Input chips must have a clickable cross icon on the right.
 Clicking the cross icon removes the chip selection from the input.
 
 The chip should have an outline and no fill.
-There should be no icon on the left.
+The chip can have an optional icon on the left.
 
 The chip itself is not clickable.
 
@@ -83,7 +83,7 @@ The chip displays the generated response or query question.
 
 Assist chips represent smart or automated actions as though the user asked an assistant to complete the action.
 
-Assist chips have no fill and an outline and can have an icon.
+Assist chips have no fill and an outline and should have an icon.
 The whole chip is clickable.
 Assist chips can show progress and confirmation feedback.
 
