@@ -6,6 +6,8 @@ title: Specification
 
 The design language should follow the [M3 material design specification](https://m3.material.io/) with the following exceptions.
 
+An alternative is the [M2 material design specification](https://m2.material.io).
+
 # Chips
 
 Use square chips from M3.
@@ -27,6 +29,15 @@ The chip should have an outline and no fill.
 The chip can have an optional icon on the left.
 
 The chip itself is not clickable.
+
+# Buttons
+
+## Differences between chips and buttons
+
+| Element | Guidance | Styling | Size |
+|-|-|-|-|
+| Chips | Dynamic and contextual | Gray outline or half tone fill. Gray text. Mixed case. Colour change on focus. | Small |
+| Buttons | Persistent and consistent | No outline, or gray outline, or full tone fill. Toned text. Upper case. Raised on focus. | Large |
 
 # Filtering
 
@@ -63,11 +74,6 @@ The solutions should be used if there are three or less mutually exclusive optio
 ![Segmented button](./segmented-button.png "Segmented button")
 
 # Action
-
-| Element | Description |
-|-|-|
-| Chips | dynamic and contextual |
-| Buttons | persistent and consistent |
 
 An alternative to assist and suggestion chips are buttons, which should appear persistently and consistently, while chips should appear dynamically and contextually.
 
