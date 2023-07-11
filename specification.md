@@ -76,6 +76,7 @@ An alternative to assist and suggestion chips are buttons, which should appear p
 Suggestion chips present dynamically generated suggestions, such as possible quick-reply responses in a chat or starting a search query.
 
 Suggestion chips have no fill and an outline with no icons.
+The whole chip is clickable.
 The chip displays the generated response or query question.
 
 ## Assist chips
@@ -83,6 +84,7 @@ The chip displays the generated response or query question.
 Assist chips represent smart or automated actions as though the user asked an assistant to complete the action.
 
 Assist chips have no fill and an outline and can have an icon.
+The whole chip is clickable.
 Assist chips can show progress and confirmation feedback.
 
 ## Buttons
