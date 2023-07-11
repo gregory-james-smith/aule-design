@@ -32,6 +32,8 @@ The chip itself is not clickable.
 
 # Buttons
 
+Use square button specification from M2.
+
 ## Differences between chips and buttons
 
 | Element | Guidance | Styling | Size |
@@ -73,7 +75,7 @@ The solutions should be used if there are three or less mutually exclusive optio
 
 ![Segmented button](./segmented-button.png "Segmented button")
 
-# Action
+# Action
 
 An alternative to assist and suggestion chips are buttons, which should appear persistently and consistently, while chips should appear dynamically and contextually.
 
