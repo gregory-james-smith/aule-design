@@ -12,8 +12,8 @@ Use square chips from M2.
 
 | M3 chip | Description |
 |-|-|
-| input |  | 
-| filter | Known as "choice" chips in M2. |
+| input | Indicate selections in a multiple selection field.  | 
+| filter | Known as "choice" chips in M2. Used to filter search results. |
 | assist | A specialisation of "action" chips from M2. |
 | suggestion | A specialisation of "action" chips from M2. |
 
@@ -57,6 +57,33 @@ Segmented buttons should not be used.
 
 Instead a segmented filter chip should be used.
 
-The solutions should be used if there are three of less mutually exclusive options.
+The solutions should be used if there are three or less mutually exclusive options.
 
 ![Segmented button](./segmented-button.png "Segmented button")
+
+# Action
+
+| Element | Description |
+|-|-|
+| Chips | dynamic and contextual |
+| Buttons | persistent and consistent |
+
+An alternative to assist and suggestion chips are buttons, which should appear persistently and consistently, while chips should appear dynamically and contextually.
+
+## Suggestion chips
+
+Suggestion chips present dynamically generated suggestions, such as possible quick-reply responses in a chat or starting a search query.
+
+Suggestion chips have no fill and an outline with no icons.
+The chip displays the generated response or query question.
+
+## Assist chips
+
+Assist chips represent smart or automated actions as though the user asked an assistant to complete the action.
+
+Assist chips have no fill and an outline and can have an icon.
+Assist chips can show progress and confirmation feedback.
+
+## Buttons
+
+...
