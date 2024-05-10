@@ -63,7 +63,7 @@ When active, the chip has half tone fill, with a tick mark on the left and displ
 
 This solution should be used if there are more than three mutually exclusive options.
 
-![Menu filter chip](./filter-menu-chip.png "Menu filter chip")
+![Menu filter chip](./images/filter-menu-chip.png "Menu filter chip")
 
 ## Segmented buttons
 
@@ -73,7 +73,7 @@ Instead a segmented filter chip should be used.
 
 The solutions should be used if there are three or less mutually exclusive options.
 
-![Segmented button](./segmented-button.png "Segmented button")
+![Segmented button](./images/segmented-button.png "Segmented button")
 
 # Action
 
