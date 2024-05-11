@@ -23,127 +23,122 @@ title: Chips and buttons
 
 Table: Differences between chips and buttons
 
-| Element | Form | ? |
+# Types of buttons and chips
+
+* Action
+    * Suggestion chip
+    * Assist chip
+    * Button
+* ???
+    * Badges
+* Switches
+    * Switches
+    * Segmented switches
+    * Menu switches
+
+| Element | M2 | M3 | Notes |
+|-|-|-|-|
+| Badge | Input chip | Input chip |  |
+| Switches | Filter chip | Filter chip |  |
+| Segmented switches | Choice chip | Filter chip |  |
+| Menu switches |  | Filter chip |  |
+| Suggestion chip | Action chip | Suggestion chip |  |
+| Assist chip | Action chip | Assist chip |  |
+
+Table: Names for each element
+
+# Styling
+
+| Element | Style | Notes |
 |-|-|-|
-| Press button |  |  |
-| Switch button |  |  |
-| Segmented switch button |  |  |
-| Input cbip |  |  |
-| Filter chip |  |  |
-| Assist chip |  |  |
-| Suggestion chip |  |  |
+| Badge |  |  |
+| Switches | Rounded corners, half tone fill on selection |  |
+| Segmented switches | Rounded corners, half tone fill on selection |  |
+| Menu switches | Rounded corners, half tone fill on selectio, down arrow |  |
+| Suggestion chip | Rounded corners, no fill, small |  |
+| Assist chip | Rounded corners, no fill, small |  |
 
-# Types of chips
+# Switches
 
-| | Input | Choice | Filter | Action |
-|-|-|-|-|-|
-| Input | x |  |  |  |
-| Filter |  | x | x |  |
-| Assist |  |  |  | x |
-| Suggestion |  |  |  | x |
-
-Table: Comparison of M2 and M3 chips
-
-
-
-
-
-
-
-
-# Chips
-
-Use square chips from M3.
-Chips either have no fill and an outline or half tone fill and no outline.
-
-
-
-
-
-
-# Buttons
-
-Use square button specification from M2.
-
-
-
-# Switch / Choice / Select
-
-These elements are used to .
-For example filtering and querying search results.
-
-|  | Number of options | Button | Chip | Field |
-|-|-|-|-|-|
-| Single select | 2-4 | Segmented button | Segmented chip |  |
-| Single select | 3+ |  | Menu chip | Menu field |
-| Multi select | 1-7 | Switch button | Filter chip |  |
-| Multi select | 7+ |  |  | Input chip with ??? |
+These elements are used to toggle binary states.
+For example, selecting filtering and search parameters.
+Sometimes they are used in forms.
 
 |  | Number of options | Switch | Form |
 |-|-|-|-|
 | Single select | 2-4 | Segmented switch | Segmented switch |
 | Single select | 3+ | Menu switch | Menu field |
 | Multi select | 1-7 | Switch | Switch |
-| Multi select | 7+ | ??? | Input chip with ??? |
+| Multi select | 7+ | Form | Input field with badges |
 
-## Filter chips
+## Switches
+
+These are also known as filter chips in M3.
 
 <!-- Interaction -->
-The filter chip is clickable and this toggles the chip between a selected and unselected state.
+The switch is clickable and this toggles the chip between a selected and unselected state.
 
 <!-- Options -->
-Filter chips should be used for mutually exclusive options.
+Switches should be used for mutually exclusive options.
 The state of a filter chip should therefore not affect the state of another filter chip.
 
 <!-- Style -->
-When unselected, the chip has an outline but no fill.
+When unselected, the switch has an outline but no fill.
 When selected, the chip has half tone fill, and has a tick mark on the left.
 
 ![Filter chip](./images/filter-chip.png "Filter chip")
 
-## Menu chips
+- [ ] Images of large square switch
+
+## Menu switches
 
 <!-- Interaction -->
-The menu chip is clickable and this opens up a list of menu options.
+The menu switch is clickable and this opens up a list of menu options.
 
 <!-- Options -->
 This solution should be used if there are more than three mutually exclusive options.
 
 <!-- Style -->
-A menu chip has a downward triangular arrow on the right to indicate it is a menu filter chip.
+A menu switch has a downward triangular arrow on the right to indicate it is a menu switch.
 When unselected, the chip has an outline but no fill.
-When active, the chip has half tone fill, with a tick mark on the left and displaying the selected option. 
+When active, the switch has half tone fill, with a tick mark on the left and displaying the selected option. 
 
 ![Menu chip](./images/menu-chip.png "Menu filter chip")
 
-## Segmented chips
+- [ ] Images of large square menu switch
+
+## Segmented switches
 
 <!-- Interaction -->
-Each option in the segmented chip is clickable and this toggles the chip between the different options.
+Each option in the segmented switch is clickable and this toggles the switch between the different options.
 One option is always selected and it will therefore have a default option.
 
 <!-- Options -->
 This solution should be used if there are two to three mutually exclusive options.
 
 <!-- Style -->
-The chip has an outline with each option segmented by a dividing line.
+The switch has an outline with each option segmented by a dividing line.
 When an option is selected it has half tone fill, and has a tick mark on the left.
 
 ![Segmented button](./images/segmented-chip.png "Segmented button")
 
-## Input chips
+- [ ] Images of large square segmented switch
+
+# Badges
+
+These are also known as input chips in M3.
 
 <!-- Options -->
 Represent selections in a multiple selection input field.
 
 <!-- Interaction -->
-When editable, input chips must have a clickable cross icon on the right.
-Clicking the cross icon removes the chip selection from the input.
-The chip itself can be clickable, see M3 spec.
+When editable, badges must have a clickable cross icon on the right.
+Clicking the cross icon removes the badge selection from the input.
+The badge itself can be clickable, see M3 specification for input chips.
 
 <!-- Style -->
-The chip should have an outline and no fill.
-The chip can have an optional icon on the left.
+The badge should have an outline and no fill.
+The badge can have an optional icon on the left.
 
 ![Input chip](images/input-chip.png)
 
@@ -181,7 +176,11 @@ Assist chips can show progress and confirmation feedback.
 
 ![Assist chips](images/assist-chip.png)
 
-Action buttons
---------------
+Buttons
+-------
 
-...
+* Regular
+    * Primary / Secondary / Tertiary
+    * Text / Square
+* Coin
+* Icon
